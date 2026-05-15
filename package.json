@@ -56,8 +56,7 @@
     "tiptap",
     "tiptap-extension",
     "prosemirror",
-    "comments",
-    "inline-comments"
+    "comments"
   ],
   "author": {
     "name": "Thomas Schoffelen"
