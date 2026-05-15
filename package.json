@@ -1,0 +1,45 @@
+{
+  "name": "tiptap-inline-comments",
+  "version": "1.0.0",
+  "description": "Tiptap extensions for inline comments and inline comment replies.",
+  "packageManager": "yarn@4.12.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "yarn build --watch",
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "dependencies": {
+    "nanoid": "^5.1.11"
+  },
+  "peerDependencies": {
+    "@tiptap/core": ">=3.0.0",
+    "@tiptap/pm": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@tiptap/core": "^3.17.1",
+    "@tiptap/pm": "^3.21.0",
+    "semantic-release": "^25.0.3",
+    "typescript": "^6.0.3"
+  },
+  "keywords": [
+    "tiptap",
+    "tiptap-extension",
+    "prosemirror",
+    "comments",
+    "inline-comments"
+  ],
+  "author": {
+    "name": "Thomas Schoffelen"
+  }
+}
