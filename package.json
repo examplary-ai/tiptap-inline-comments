@@ -4,15 +4,30 @@
   "description": "Tiptap extensions for inline comments and inline comment replies.",
   "packageManager": "yarn@4.12.0",
   "type": "module",
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
   "license": "MIT",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "dev": "yarn build --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "release": "semantic-release"
   },
   "publishConfig": {
@@ -27,9 +42,10 @@
     "@tiptap/pm": ">=3.0.0"
   },
   "devDependencies": {
-    "@tiptap/core": "^3.17.1",
-    "@tiptap/pm": "^3.21.0",
+    "@tiptap/core": "^3.23.4",
+    "@tiptap/pm": "^3.23.4",
     "semantic-release": "^25.0.3",
+    "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   },
   "keywords": [
