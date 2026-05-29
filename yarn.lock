@@ -1010,11 +1010,11 @@ __metadata:
   linkType: hard
 
 "@tiptap/core@npm:^3.23.4":
-  version: 3.23.4
-  resolution: "@tiptap/core@npm:3.23.4"
+  version: 3.24.0
+  resolution: "@tiptap/core@npm:3.24.0"
   peerDependencies:
-    "@tiptap/pm": 3.23.4
-  checksum: 10c0/2d6f09d9466cc99d89b35846e1b5857af9cb439e6b80b89fbcd06a25d3d78fa4b6861becf4db84d945623aa6a45361222988f4e14597162a53a0f12a0f286bf5
+    "@tiptap/pm": 3.24.0
+  checksum: 10c0/e73e0665d7195df1fdf7ae15bb58136f279d1d48d69004c2ebbe3ef1cacfd4db7e846a6ea0fa55e18b6277f646f29928c89923418f391445b139c02b094db3f0
   languageName: node
   linkType: hard
 
