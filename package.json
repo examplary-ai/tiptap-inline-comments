@@ -39,7 +39,7 @@
     "provenance": true
   },
   "dependencies": {
-    "nanoid": "^5.1.11"
+    "nanoid": "^6.0.0"
   },
   "peerDependencies": {
     "@tiptap/core": ">=3.0.0",
